@@ -1,0 +1,68 @@
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="/static/style.css" rel="stylesheet">
+    <title>Register | DollarXPress</title>
+</head>
+<body>
+    <div>
+        <h1><span id="dollar">Dollar</span><span id="xpress">XPress</span></h1>
+    </div>
+    <div id="topnav">
+        <button class="navbut"><a href="/" class="a-white">Home</a></button>
+        <button class="navbut"><a href="/register" class="a-white">Register</a></button>
+    </div>
+
+
+    <div>
+    <form action="/register" method="post">
+        <div id="form">
+        <div class="form-group">
+        <label>Email address:</label><br>
+        <input name="email" class="form-control" type="text" placeholder="abc@gmail.com">
+        </div>
+
+        <div class="form-group">
+        <label>Name:</label><br>
+        <input name="name" class="form-control" type="text" placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+        <label>Cryptocurrency:</label><br>
+        <select class="form-control" name="crypto">
+            <option value="bitcoin">Bitcoin</option>
+            <option value="etherium">Etherium</option>
+            <option value="dogecoin">Dogecoin</option>
+
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label>Day to send emails:</label><br>
+            <select class="form-control" name="day">
+                <option value="mon">Mon</option>
+                <option value="tue">Tue</option>
+                <option value="wed">Wed</option>
+                <option value="thu">Thu</option>
+                <option value="fri">Fri</option>
+                <option value="sat">Sat</option>
+
+            </select>
+            </div>
+
+        <button type="submit" class="btn btn-default"> Submit</button>
+        </div>
+    </form>
+
+    </div>
+    {% block main %}
+    {{mycontent}}
+    {% endblock %}
+</body>
+</html>
