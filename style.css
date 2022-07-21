@@ -1,0 +1,86 @@
+h1{
+    text-align:center;
+}
+h1, h3{
+    font-family: 'Lato', sans-serif;
+}
+h3{
+    text-align:justify;
+    margin:10px;
+}
+#dollar{
+    color:green;
+}
+#xpress{
+    font-style: italic;
+}
+#topnav{
+    background-color:green;
+    width:100%;
+    height:40px;
+    text-align: center;
+
+}
+.navbut{
+    background-color:green;
+    color:white;
+    border:0px solid;
+    font-family: 'Lato', sans-serif;
+    font-size:15px;
+    width:100px;
+    margin:10px;
+    transition-duration: 0.4s;
+}
+.navbut:hover{
+    background-color:white;
+    border:2px solid black;
+    color:black;
+}
+#container{
+    position:relative;
+}
+#text-block{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+#frontimg{
+    width:100%;
+    height:350px;
+}
+#form{
+    width:150px;
+}
+.icons{
+    width:350px;
+    text-align:center;
+    margin:auto;
+    display: inline-block;
+
+}
+
+#info{
+    text-align:center;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+h3{
+    text-align:center;
+}
+form{
+    display:inline-block;
+    text-align: center;
+    padding:50px;
+    margin:20px;
+    border-radius:5px;
+    background-color:lightgreen;
+}
+body{
+    text-align:center;
+}
